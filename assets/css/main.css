@@ -328,10 +328,11 @@ html.js .hero__title .word:nth-child(2)>span{animation-delay:1.28s}
    ============================================================ */
 .carousel-wrap{position:relative}
 .carousel{display:flex;gap:clamp(14px,1.6vw,20px);overflow-x:auto;scroll-snap-type:x mandatory;
-  padding-block:6px 12px;scrollbar-width:none;-ms-overflow-style:none;cursor:grab}
+  padding-block:6px 12px;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;-webkit-overflow-scrolling:touch;user-select:none}
 .carousel::-webkit-scrollbar{display:none}
 .carousel.dragging{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
 .carousel>*{scroll-snap-align:start;flex:0 0 auto}
+.carousel img{-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;user-select:none;pointer-events:none}
 .car-controls{display:flex;gap:.6rem;align-items:center}
 .car-btn{width:52px;height:52px;border-radius:50%;border:1px solid var(--border-2);background:rgba(255,255,255,.03);
   display:inline-flex;align-items:center;justify-content:center;transition:border-color .25s,background .25s,transform .18s,opacity .25s}
@@ -354,6 +355,8 @@ html.js .hero__title .word:nth-child(2)>span{animation-delay:1.28s}
 .review__who span{font-size:.76rem;color:var(--text-mute);display:inline-flex;align-items:center;gap:.4em}
 .gbadge{display:inline-flex;align-items:center;gap:.35em;font-size:.72rem;color:var(--text-mute)}
 .gbadge b{color:var(--text-dim);font-weight:600}
+.reviews-cta{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.1rem;margin-top:clamp(30px,4.5vw,52px)}
+.reviews-cta p{color:var(--text-dim);max-width:32ch}
 
 /* mosaico trabajos */
 .tile{position:relative;overflow:hidden;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface)}
@@ -611,6 +614,7 @@ html:not(.js) [data-reveal],html:not(.js) .kinetic .word>span{opacity:1 !importa
   /* showcase → carrusel en móvil */
   .showcase{height:auto !important}
   .showcase__sticky{display:none}
+  .showcase__scroller{display:none}
   .showcase-mobile{display:block}
   .gallery-grid{grid-template-columns:repeat(6,1fr)}
   .col-6,.col-4,.col-3,.col-8{grid-column:span 3}

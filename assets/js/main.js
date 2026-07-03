@@ -232,6 +232,7 @@
 
       // drag to scroll (desktop)
       var down = false, moved = false, sx = 0, sl = 0;
+      track.addEventListener("dragstart", function (e) { e.preventDefault(); });
       track.addEventListener("pointerdown", function (e) {
         if (e.pointerType === "touch") return;
         down = true; moved = false; sx = e.clientX; sl = track.scrollLeft;
