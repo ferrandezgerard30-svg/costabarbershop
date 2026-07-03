@@ -207,9 +207,11 @@
   /* ---------------- Carruseles ---------------- */
   function carousels() {
     $$("[data-carousel]").forEach(function (track) {
-      var wrap = track.closest(".carousel-wrap") || track.parentElement;
-      var prev = wrap.querySelector("[data-car-prev]");
-      var next = wrap.querySelector("[data-car-next]");
+      // Los botones pueden estar en un .head-row hermano (no dentro de .carousel-wrap),
+      // así que se buscan en el contenedor común más cercano.
+      var host = track.closest(".carousel-scope") || track.closest(".container") || track.closest("section") || track.parentElement;
+      var prev = host.querySelector("[data-car-prev]");
+      var next = host.querySelector("[data-car-next]");
       function amount() {
         var first = track.children[0];
         if (!first) return track.clientWidth;
