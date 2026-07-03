@@ -45,7 +45,7 @@ Para regenerar el `og:image` o el favicon, reemplaza `og.jpg` / `favicon-*.png` 
 
 ## Notas
 - Respeta `prefers-reduced-motion` (versión con menos movimiento) y funciona sin JS.
-- Las reservas van a **Yeasy** (`https://yeasy.io/`): los botones &ldquo;Reservar&rdquo; y la
-  tarjeta de contacto abren la app de Yeasy, donde La Costa Barbershop est&aacute; listada. Si
-  tienes tu **enlace directo de reserva** de Yeasy (por ejemplo el de tu bio de Instagram),
-  sustituye `https://yeasy.io/` por ese enlace en los `href` para que la reserva sea de un toque.
+- Las reservas van directas a **Yeasy**: los botones &ldquo;Reservar&rdquo; y la tarjeta de
+  contacto abren tu p&aacute;gina de reserva
+  (`https://yeasy.io/commerce/9732f32d-7ad4-47b1-8197-7eed3df50c48`). Si alguna vez cambia,
+  busca ese enlace con reemplazar-todo en los `.html` y ponlo por el nuevo.
