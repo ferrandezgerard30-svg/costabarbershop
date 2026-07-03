@@ -45,6 +45,7 @@ Para regenerar el `og:image` o el favicon, reemplaza `og.jpg` / `favicon-*.png` 
 
 ## Notas
 - Respeta `prefers-reduced-motion` (versión con menos movimiento) y funciona sin JS.
-- El enlace de reservas de **Booksy** no estaba disponible públicamente: los botones usan
-  teléfono e Instagram. Cuando tengas la URL de Booksy, añádela como `href` en los botones
-  “Reservar” / tarjeta “Booksy”.
+- Las reservas van a **Yeasy** (`https://yeasy.io/`): los botones &ldquo;Reservar&rdquo; y la
+  tarjeta de contacto abren la app de Yeasy, donde La Costa Barbershop est&aacute; listada. Si
+  tienes tu **enlace directo de reserva** de Yeasy (por ejemplo el de tu bio de Instagram),
+  sustituye `https://yeasy.io/` por ese enlace en los `href` para que la reserva sea de un toque.

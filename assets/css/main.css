@@ -473,7 +473,7 @@ html.js .hero__title .word:nth-child(2)>span{animation-delay:1.28s}
    FOOTER
    ============================================================ */
 .footer{border-top:1px solid var(--border);padding-block:clamp(48px,6vw,80px) 32px;position:relative}
-.footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:clamp(28px,4vw,56px)}
+.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1.15fr;gap:clamp(28px,4vw,56px)}
 .footer .brand{font-size:1.6rem;margin-bottom:1rem}
 .footer__about p{color:var(--text-dim);font-size:.95rem;max-width:34ch}
 .footer__col h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-mute);margin-bottom:1.1rem;font-weight:700}
@@ -543,8 +543,8 @@ html.js .hero__title .word:nth-child(2)>span{animation-delay:1.28s}
   font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);transition:all .25s}
 .filter-chip.active{background:var(--grad-fire);color:#160a04;border-color:transparent}
 @media (hover:hover){.filter-chip:not(.active):hover{border-color:var(--fire);color:#fff}}
-@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery .g--wide{grid-column:span 2;padding-top:59%}}
-@media (max-width:560px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery .g--wide{grid-column:span 2;padding-top:60%}}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery .g--wide{grid-column:span 1;padding-top:125%}}
+@media (max-width:560px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery .g--wide{grid-column:span 1;padding-top:125%}}
 
 /* lightbox */
 .lightbox{position:fixed;inset:0;z-index:9997;background:rgba(6,6,8,.94);backdrop-filter:blur(8px);
